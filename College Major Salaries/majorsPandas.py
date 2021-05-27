@@ -4,7 +4,7 @@ import matplotlib.pyplot as plt
 
 # Demos running SQL queries on a CSV file
 
-df = pd.read_csv("degrees-that-pay-back.csv")
+df = pd.read_csv("College Major Salaries\degrees-that-pay-back.csv")
 df[df.columns[1:]] = df[df.columns[1:]].replace('[\$,]', '', regex=True).astype(float)
 
 print(sqldf("""
